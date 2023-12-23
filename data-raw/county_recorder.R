@@ -1,0 +1,23 @@
+library(ManifoldDestiny)
+library(ggplot2)
+library(dplyr)
+library(googlesheets4)
+library(htmltools)
+library(gridExtra)
+library(usethis)
+md <- jsonlite::fromJSON(paste0(rprojroot::find_rstudio_root_file(),"/data-raw/metadata.json"))
+#googlesheets4::gs4_auth(email="lotariohw26@gmail.com")
+lapply(paste0("app",4:4), function(x){recoudatr(mda=md[[x]])})
+##################################################################################################################
+#################################################################################################################
+#################################################################################################################
+##### Historial data
+##hdt <- c('https://docs.google.com/spreadsheets/d/1xyMQovYh81Wptz-5fyVuLpL4uHrNE78NCDKOVQZ8MyE/edit#gid=0',
+##'https://docs.google.com/spreadsheets/d/1v9-bAI9INnjgfInEJBHNBp4D7N3-Opf4nDKJbzxdBrk/edit#gid=0',
+##'https://docs.google.com/spreadsheets/d/1pzpaOrABQ_9oJK5juubeG_gj4InJpkFzhi5yzxwqf8k/edit#gid=0', 
+##'https://docs.google.com/spreadsheets/d/1Gs2Z3eo-ZNO7FZRGXZpgh6J2dJeyryCaMLSbUg3tQig/edit#gid=0', 
+##'https://docs.google.com/spreadsheets/d/1DC5zZjoklVgTNExXRTxAIXYcq8_TpVn_WAK03pi6Fpw/edit#gid=0',
+##'https://docs.google.com/spreadsheets/d/1tWgYZcv53teugdQi4WYmNEw0XlIBktrXqka8G6I7TJk/edit#gid=0',
+##'https://docs.google.com/spreadsheets/d/1tAB6sjG7P-0y6PzxyYDvKMbYDK833MgQhfLti5Ip6Gg/edit#gid=1217173103',
+##'https://docs.google.com/spreadsheets/d/1xk8IW9v03i0omZfUo9c75_7wuw9RvE1w8UqUyo1WzAw/edit#gid=1217173103')
+###################################################################################################################
